@@ -24,7 +24,7 @@ async def _(event):
             logger.info("TODO: pehli fursat me jayega")
             reply = "{} warnings, <u><a href='tg://user?id={}'>user</a></u> pehli fursat me nikl!".format(limit, reply_message.from_id)
     else:
-        reply = "<u><a href='tg://user?id={}'>user</a></u> has {}/{} warnings... sabhalja beta...!!!".format(reply_message.from_id, num_warns, limit)
+        reply = "<u><a href='tg://user?id={}'>user</a></u> has {}/{} warnings... sambhalja beta...!!!".format(reply_message.from_id, num_warns, limit)
         if warn_reason:
             reply += "\nReason for last warn:\n{}".format(html.escape(warn_reason))
     #
@@ -48,7 +48,7 @@ async def _(event):
         else:
             await event.edit("this user has {} / {} warning,reason pata h to thik...nhi to....".format(num_warns, limit))
     else:
-        await event.edit("this user hasn't got any warnings!")
+        await event.edit("ye sahi user h warning nhi h isko koi!")
 
 
 @borg.on(admin_cmd(pattern="reset_warns"))
