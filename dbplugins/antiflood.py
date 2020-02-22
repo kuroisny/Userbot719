@@ -43,14 +43,14 @@ async def _(event):
         )
         await asyncio.sleep(10)
         await no_admin_privilege_message.edit(
-            "https://t.me/keralagram/724970",
+            "!!🖤💔.....~!!!33561405!!!~.....💔🖤!!",
             link_preview=False
         )
     else:
         await event.client.send_message(
             entity=event.chat_id,
             message="""**Automatic AntiFlooder**
-[User](tg://user?id={}) Kam bola kar... spaming ghar pe yaha nhi.""".format(event.message.from_id),
+[User](tg://user?id={}) msgs bhejne ki limit h yaha... spaming ghar pe yaha nhi.""".format(event.message.from_id),
             reply_to=event.message.id
         )
 
