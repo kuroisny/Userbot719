@@ -43,7 +43,7 @@ async def _(event):
         )
         await asyncio.sleep(10)
         await no_admin_privilege_message.edit(
-            "!!🖤💔.....~!!!33561405!!!~.....💔🖤!!",
+            "", #that shit is here
             link_preview=False
         )
     else:
